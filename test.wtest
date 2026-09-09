@@ -1,0 +1,10 @@
+import personajesElementos.*
+
+
+describe "test de personajes y elementos" {
+  test "floki encuentra a aurora con una lanza" {
+    floki.cambiarArma(jabalina)
+    floki.encontrar(aurora)
+    assert.notThat(aurora.estaViva)
+  }
+}
